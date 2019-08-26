@@ -1,0 +1,757 @@
+Subscription/////////////////// 
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Raleway&amp;display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <style>
+    body,*,html{
+        margin:0;
+        font-family: 'Arial', sans-serif;
+        padding:0;
+        
+    }
+    .formElement input{
+     border: none;
+  background: #FFFFFF;
+  padding: 4px 10px;
+  
+    }
+    .input{
+        width:100%;
+    }
+    .Footer{
+        margin:0;
+        font-family: 'Arial', sans-serif;
+        padding:0;
+         overflow-x: hidden;
+      overflow-y:hidden;
+         
+    }
+    .formElement input{
+     border:1px solid #000 !important;
+  background: #FFFFFF !important;
+  padding: 4px 10px;
+  
+    }
+    .input{
+        width:100%;
+    }
+    .Footer{
+     padding: 1rem;
+    }
+    .Header,.Footer{
+        background: #ffffff;
+        color:#fff;
+    }
+    .Header{
+     padding:.75rem 0;
+     text-align:left;
+    }
+    .tabs{
+     padding:.5rem 0;
+     text-align: center;
+      font-size:32px;
+      
+    }
+    .mainBodyWrap{
+     padding:1rem;
+    }
+    .para{
+     padding:.5rem 0;
+     color:#00387f;
+    }
+    label{
+     color:#717171;
+    }
+    .formElement{
+     padding:12px 0;
+    }
+    .checkBox{
+     padding-top:.5rem;
+     padding-bottom: 1.5rem;
+    }
+    .Btn{
+     padding:1rem 0;
+    }
+    .container{
+     margin:0 auto;
+     width: 100%;
+     max-width:1200px;
+    }
+    .updateBtn{
+     padding: 5px 28px;
+     background: #00387f;
+     color: #fff !important;
+     border: none;
+     border-radius: 20px;
+     font-weight: bold !important;
+    }
+    .Footer{
+     height: 160px;
+      width:100%;
+    }
+    .Footer .GIT{
+     font-size: 14px;
+    }
+    .ColHalf{
+     width:50%;
+     float: left;
+      height:160px;
+    }
+      .ColHalf2{
+         width:50%;
+        height:160px;
+     float: left;
+      }
+    .ColHalf2{text-align: left;}
+    .formElement {
+        width: 100%;
+  max-width: 325px;
+    }
+    .formWrapper{
+     width:100%;
+     border-bottom: 1px solid #00387f;
+    }
+    .checkBox{
+     border-bottom: 1px solid #00387f;
+    }
+    .tabs{
+        background: transparent !important;
+    }
+    .commenTab.showSecActive{
+     display:block;
+    }
+    .commenTab{
+     display:none
+    }
+    .tabs a.active{
+     color: #00387f;
+     text-decoration:none;
+    }
+    .mainBodyWrap{
+      /*height: calc(100vh - 60px);*/
+     overflow: auto;
+ }
+    .tabs a:hover,.tabs a{
+     color:#FFFFFF;
+     text-decoration:none;
+    }
+    .tabs span{
+     color:#FFFFFF;
+    }
+      .fontcolor{
+      color: #00387f;
+     }
+    .HeadingPC h3{
+     font-size: 22px;
+     border-bottom: 1px solid #00387f;
+     color: #00387f;
+     padding: 12px 0;
+    }
+    .mainBodyWrap .notice{
+     font-size: 12px;
+  color: #948f8f;
+    }
+    .form-element{
+     margin: 12px 0;
+    }
+    .Header img{
+     width:100%;
+     max-width: 400px;
+    }
+    .Footer .img1 img{
+     width:100%;
+     max-width: 60px;
+    }
+    .Footer p{
+     font-size:10px;
+     color: #ddd;
+    }
+    .ColHalf2 .img2 img{
+        width:100%;
+        max-width: 22px;
+    }
+      
+ @media only screen and (max-width:480px){
+/* MOBILE GLOBAL STYLES - DO NOT CHANGE */
+body, .tb_properties{font-family: Arial !important; font-size: 16px !important; color: #808080 !important; line-height: 1 !important; padding: 0px !important; }.buttonstyles{font-family: Arial !important; font-size: 16px !important; color: #FFFFFF !important; padding: 0px !important; }h1{font-family: Arial !important; font-size: 22px !important; color: #202020 !important; line-height: 1 !important; }h2{font-family: Arial !important; font-size: 20px !important; color: #202020 !important; line-height: 1 !important; }h3{font-family: Arial !important; font-size: 18px !important; color: #202020 !important; line-height: 1 !important; }a:not(.buttonstyles){line-height: 1 !important; }.mobile-hidden{display: none !important; }.responsive-td {width: 100% !important; display: block !important; padding: 0 !important;}
+/* END OF MOBILE GLOBAL STYLES - DO NOT CHANGE */
+}</style>
+
+  <div class="Header">
+    <img src="https://image.s7.sfmc-content.com/lib/fe9813727c64057975/m/1/2b9baa4d-83a8-43a7-8a53-28ca879a4ae8.png" width="90" height="80">
+  </div>
+  
+  <div class="container">
+   <div class="mainBodyWrap">
+    <div class="commenTab showSecActive" id="Subscription_Center">
+     <div class="HeadingPC">
+      <h3>Subscription Centre
+      </h3>
+     </div>
+     <div class="Col">
+      <section class="col-sm-offset-1 col-sm-10">
+       <section>
+ %%[
+ Var @FirstName, @LastName, @Automotive, @Aerospace, @Others,@Status,@SubscriberKey, @SalesforceID, @Email, @marketing, @Supply, @Competitive, @NPI, @Defence, @FMCG, @Pharmaceutical, @IndustrialEquipmentProducts, @Chemical, @Power, @Construction, @Rail, @Publications
+ Set @Status = "Active"
+ Set @FirstName = [First Name]
+ Set @LastName = [Last Name]
+ Set @Email = [EmailAddr]
+ Set @SubscriberKey = [_subscriberkey]
+ Set @SalesforceID = Substring(@SubscriberKey, 0, 15)
+ Set @Automotive = Requestparameter("checkbox1")
+ Set @Aerospace = Requestparameter("checkbox2")
+ Set @Others = Requestparameter("checkbox3")
+ Set @marketing = Requestparameter("checkbox4")
+ Set @Supply = Requestparameter("checkbox5")
+ Set @Competitve = Requestparameter("checkbox6")
+ Set @NPI = Requestparameter("checkbox7")
+ 
+ Set @Defence = Requestparameter("checkbox9")
+ Set @FMCG = RequestParameter("checkbox10")
+ Set @Pharmaceutical = RequestParameter("checkbox11")
+ Set @IndustrialEquipmentProducts = RequestParameter("checkbox12")
+ Set @Chemical = RequestParameter("checkbox13")
+ Set @Power = RequestParameter("checkbox14")
+ Set @Construction = RequestParameter("checkbox15")
+ Set @Rail = RequestParameter("checkbox16")
+ Set @Publications = RequestParameter("checkbox17")
+
+ If requestparameter("hdsubmit")=="issubmit" then
+ 
+ Set @SMMTobjectName = lookup('SMMTobject__c_Salesforce','Id','Email_Address__c',@Email)
+ 
+ upsertdata("Test_Subscription_final",1, "Email", @Email, "SubscriberKey", @SubscriberKey, "Automotive", @Automotive,"Aerospace", @Aerospace, "Others", @Others, "status", @Status,  "ManufacturingOperations", @marketing, "SupplyChainManagement", @Supply , "CompetitiveStrategy&MgmtSystem" , @Competitve , "NPI&LifecycleMgmt" ,@NPI, "Defence", @Defence, "FMCG", @FMCG, "Pharmaceutical&Health", @Pharmaceutical, "IndustrialEquipmentProducts", @IndustrialEquipmentProducts, "Chemical&Process", @Chemical, "Power&CivilNuclear", @Power, "Construction", @Construction, "Rail", @Rail,  "Publications&Books", @Publications)
+
+  UpdateSingleSalesforceObject('SMMTobject__c', @SMMTobjectName, 'FirstName__c', @FirstName, 'LastName__c', @LastName, 'Email_Address__c', @Email, 'Company__c', @Company, 'JobRole__c', @JobRole, 'JobTitle__c', @JobTitle, 'Industry_Sector__c', @Industry , 'SubscriberKey__c' , @SubscriberKey, 'Automotive__c', @Automotive, 'Aerospace__c', @Aerospace, 'Others__c', @Others, 'Status__c', @Status, 'ManufacturingOperations__c', @marketing, 'SupplyChainManagement__c', @Supply, 'CompetitiveStrategy_MgmtSystems__c', @Competitve, 'NPI_LifecycleManagement__c' , @NPI, 'Defence__c', @Defence, 'fmcg__c', @FMCG, 'Pharmaceutical_Health__c', @Pharmaceutical, 'IndustrialEquipment_product__c', @IndustrialEquipmentProducts, 'Chemical_Process__c', @Chemical, 'Power_civilNuclear__c', @Power, 'Construction__c', @Construction, 'Rail__c', @Rail, 'Publications_books__c', @Publications)
+
+  %%=Redirect('http://cloud.email.industryforum.co.uk/Thankyou')=%%
+
+ ENDIF
+ ]%%
+
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <form id="myForm" method="post" action="%%= RequestParameter('PAGEURL')=%%">
+         <b>
+         </b>
+         <h3><br>
+          <div style="background:lightyellow; display:inline-block;">
+           <b>%%=v(@Email)=%%<br></b></div>
+          <br>
+          <div class="Col">
+           <p class="para"><strong>SMMT IF Marketing Preferences</strong></p>
+           <span class="notice">To subscribe to any publications, please check the box(es) and
+            click the submit button below.</span>
+          </div>
+         </h3><br>
+         <br>
+         <div>
+
+
+          <div style="display:inline-block; padding-bottom:50px; width:50%; float:left;">
+           <input type="checkbox" name="checkbox1" id="checkbox1" value="Yes">
+           <label class="checkbox__label" for="checkbox1"><strong>Automotive</strong>
+           </label><br><br>
+           <input type="checkbox" name="checkbox2" id="checkbox2" value="Yes">
+           <label class="checkbox__label" for="checkbox2"><strong>Aerospace</strong>
+           </label><br><br>
+           <input type="checkbox" name="checkbox3" id="checkbox3" value="Yes">
+           <label class="checkbox__label" for="checkbox3"><strong>Others</strong>
+           </label><br><br>
+     <input type="checkbox" name="checkbox4" id="checkbox4" value="Yes">
+           <label class="checkbox__label" for="checkbox4"><strong>Manufacturing Operations</strong>
+           </label><br><br>
+           <input type="checkbox" name="checkbox5" id="checkbox5" value="Yes">
+           <label class="checkbox__label" for="checkbox5"><strong>Supply Chain Management</strong>
+           </label><br><br>
+           <input type="checkbox" name="checkbox6" id="checkbox6" value="Yes">
+           <label class="checkbox__label" for="checkbox6"><strong>Competitive Strategy and Management System</strong>
+           </label><br><br>
+           <input type="checkbox" name="checkbox7" id="checkbox7" value="Yes">
+           <label class="checkbox__label" for="checkbox7"><strong>NPI Lifecycle Management</strong>
+           </label><br><br>
+            <input type="checkbox" name="checkbox9" id="checkbox9" value="Yes">
+           <label class="checkbox__label" for="checkbox9"><strong>Defence</strong>   
+     </label><br><br>
+          </div>
+
+          <div style="display:inline-block; width:50%; float:right;">
+     
+     
+           <input type="checkbox" name="checkbox10" id="checkbox10" value="Yes">
+           <label class="checkbox__label" for="checkbox10"><strong>FMCG</strong>   
+     </label><br><br>
+     <input type="checkbox" name="checkbox11" id="checkbox11" value="Yes">
+           <label class="checkbox__label" for="checkbox11"><strong>Pharmaceutical and Health</strong>   
+     </label><br><br>
+     <input type="checkbox" name="checkbox12" id="checkbox12" value="Yes">
+     <label class="checkbox__label" for="checkbox12"><strong>Industrial Equipment and Products</strong>       
+     </label><br><br>
+     <input type="checkbox" name="checkbox13" id="checkbox13" value="Yes">
+           <label class="checkbox__label" for="checkbox13"><strong>Chemical and Process</strong>   
+     </label><br><br>                              
+     <input type="checkbox" name="checkbox14" id="checkbox14" value="Yes">
+           <label class="checkbox__label" for="checkbox14"><strong>Power and Civil Nuclear</strong> 
+     </label><br><br>
+     <input type="checkbox" name="checkbox15" id="checkbox15" value="Yes">
+     <label class="checkbox__label" for="checkbox15"><strong>Construction</strong>   
+     </label> <br><br>
+     <input type="checkbox" name="checkbox16" id="checkbox16" value="Yes">
+     <label class="checkbox__label" for="checkbox16"><strong>Rail</strong>   
+     </label><br><br>
+     <input type="checkbox" name="checkbox17" id="checkbox17" value="Yes">
+           <label class="checkbox__label" for="checkbox17"><strong>Publications and Books</strong>   
+     </label><br><br>
+           </div>
+         </div>
+
+
+
+         <div style=" text-align:left; padding-top:50px;">
+
+          <input type="submit" class="updateBtn">
+          <input type="hidden" id="hdsubmit" name="hdsubmit" value="issubmit">
+         </div>
+          <br>
+          <br>
+          <hr>
+         <div class="Footer">
+          <div class="container">
+            <div class="ColHalf">
+  
+             
+              <div style="display:inline-block">
+               
+             <a href=""><img src="https://image.s7.sfmc-content.com/lib/fe9813727c64057975/m/1/55693131-544f-4d2e-a0c8-d94b5df0e8d3.png" width="30px" height="22px"><span>&nbsp;+44 (0) 121 717 6600</span></a>&nbsp;&nbsp;
+              <br>
+              <br>
+              <a href=""><img src="https://image.s7.sfmc-content.com/lib/fe9813727c64057975/m/1/aef0643d-5a39-4a7f-a3d3-6d1ae6f3f32c.png" width="27px" height="18px"><span>   &nbsp; enquiries@industryforum.co.uk</span></a>
+             
+            </div>
+           </div>
+           <div class="ColHalf2"> 
+              <a href="https://www.youtube.com/channel/UCj8Q0uGuy4eQeQm9CGaDLOQ"><img src="https://image.s7.sfmc-content.com/lib/fe9813727c64057975/m/1/cd585db6-2898-44c5-8e45-05a5aafabdc7.png" width="40px" height="40px" style="margin:0px 5px"></a>
+              
+               <a href="https://www.linkedin.com/company/industry-forum"><img src="https://image.s7.sfmc-content.com/lib/fe9813727c64057975/m/1/0c17af4f-017e-4232-a0a0-6b08f4a9618f.png" width="40px" height="40px" style="margin:0px 5px"></a>
+              
+              <a href="https://twitter.com/smmtif"><img src="https://image.s7.sfmc-content.com/lib/fe9813727c64057975/m/1/118f71df-b400-42e1-90e8-a2abf70a0129.png" width="40px" height="40px" style="margin:0px 5px"></a>
+                </div>    
+
+          </div>
+         </div>
+         
+        </form>
+       </section>
+      </section>
+     </div>
+    </div>
+   </div>
+  </div>
+
+
+//////////////////////////////////////////////
+
+
+Profile/////////////////////////
+
+
+
+ <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Raleway&amp;display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <style>
+    body,*,html{
+        margin:0;
+        font-family: 'Arial', sans-serif;
+        padding:0;
+        
+    }
+    .formElement input{
+     border: none;
+  background: #FFFFFF;
+  padding: 4px 10px;
+  
+    }
+    .input{
+        width:100%;
+    }
+    .Footer{
+        margin:0;
+        font-family: 'Arial', sans-serif;
+        padding:0;
+         overflow-x: hidden;
+      overflow-y:hidden;
+         
+    }
+    .formElement input{
+     border:1px solid #000 !important;
+  background: #FFFFFF !important;
+  padding: 4px 10px;
+  
+    }
+    .input{
+        width:100%;
+    }
+    .Footer{
+     padding: 1rem;
+    }
+    .Header,.Footer{
+        background: #ffffff;
+        color:#fff;
+    }
+    .Header{
+     padding:.75rem 0;
+     text-align:left;
+    }
+    .tabs{
+     padding:.5rem 0;
+     text-align: center;
+      font-size:32px;
+      
+    }
+    .mainBodyWrap{
+     padding:1rem;
+    }
+    .para{
+     padding:.5rem 0;
+     color:#00387f;
+    }
+    label{
+     color:#717171;
+    }
+    .formElement{
+     padding:12px 0;
+    }
+    .checkBox{
+     padding-top:.5rem;
+     padding-bottom: 1.5rem;
+    }
+    .Btn{
+     padding:1rem 0;
+    }
+    .container{
+     margin:0 auto;
+     width: 100%;
+     max-width:1200px;
+    }
+    .updateBtn{
+     padding: 5px 28px;
+     background: #00387f;
+     color: #fff !important;
+     border: none;
+     border-radius: 20px;
+     font-weight: bold !important;
+    }
+    .Footer{
+     height: 160px;
+      width:100%;
+    }
+    .Footer .GIT{
+     font-size: 14px;
+    }
+    .ColHalf{
+     width:50%;
+     float: left;
+      height:160px;
+    }
+      .ColHalf2{
+         width:50%;
+        height:160px;
+     float: left;
+      }
+    .ColHalf2{text-align: left;}
+    .formElement {
+        width: 100%;
+  max-width: 325px;
+    }
+    .formWrapper{
+     width:100%;
+     border-bottom: 1px solid #00387f;
+    }
+    .checkBox{
+     border-bottom: 1px solid #00387f;
+    }
+    .tabs{
+        background: transparent !important;
+    }
+    .fontcolor{
+      color: #00387f !important;
+    }
+    .commenTab.showSecActive{
+     display:block;
+    }
+    .commenTab{
+     display:none
+    }
+    .tabs a.active{
+     color: #00387f;
+     text-decoration:none;
+    }
+    .mainBodyWrap{
+      /*height: calc(100vh - 60px);*/
+     overflow: auto;
+ }
+    .tabs a:hover,.tabs a{
+     color:#FFFFFF;
+     text-decoration:none;
+    }
+    .tabs span{
+     color:#FFFFFF;
+    }
+    .HeadingPC h3{
+     font-size: 22px;
+     border-bottom: 1px solid #00387f;
+     color: #00387f;
+     padding: 12px 0;
+    }
+    .mainBodyWrap .notice{
+     font-size: 12px;
+  color: #948f8f;
+    }
+     
+    .form-element{
+     margin: 12px 0;
+    }
+    .Header img{
+     width:100%;
+     max-width: 400px;
+    }
+    .Footer .img1 img{
+     width:100%;
+     max-width: 60px;
+    }
+    .Footer p{
+     font-size:10px;
+     color: #ddd;
+    }
+    .ColHalf2 .img2 img{
+        width:100%;
+        max-width: 22px;
+    }
+      
+ @media only screen and (max-width:480px){
+/* MOBILE GLOBAL STYLES - DO NOT CHANGE */
+body, .tb_properties{font-family: Arial !important; font-size: 16px !important; color: #808080 !important; line-height: 1 !important; padding: 0px !important; }.buttonstyles{font-family: Arial !important; font-size: 16px !important; color: #FFFFFF !important; padding: 0px !important; }h1{font-family: Arial !important; font-size: 22px !important; color: #202020 !important; line-height: 1 !important; }h2{font-family: Arial !important; font-size: 20px !important; color: #202020 !important; line-height: 1 !important; }h3{font-family: Arial !important; font-size: 18px !important; color: #202020 !important; line-height: 1 !important; }a:not(.buttonstyles){line-height: 1 !important; }.mobile-hidden{display: none !important; }.responsive-td {width: 100% !important; display: block !important; padding: 0 !important;}
+/* END OF MOBILE GLOBAL STYLES - DO NOT CHANGE */
+}</style>
+
+ 
+<div class="Header">
+            <img src="https://image.s7.sfmc-content.com/lib/fe9813727c64057975/m/1/2b9baa4d-83a8-43a7-8a53-28ca879a4ae8.png" width="90" height="80">
+        </div>
+       
+  <div class="container">
+   <div class="mainBodyWrap">
+    <div class="commenTab showSecActive" id="Profile_Center">
+     <div class="HeadingPC">
+      <h3>Profile Centre</h3>
+     </div>
+     <div class="Col">
+     <section class="col-sm-offset-1 col-sm-10">
+          <section>
+
+
+ %%[
+ Var @FirstName, @LastName, @Status,@SubscriberKey, @SalesforceID, @Email
+ Set @Status = "Active"
+ Set @LastName = [Last Name]
+ Set @Email = [EmailAddr]
+ 
+ Set @SubscriberKey = [_subscriberkey]
+ Set @SalesforceID = Substring(@SubscriberKey, 0, 15)
+    Set @FirstName = Requestparameter("FirstName")
+    Set @LastName = Requestparameter("Surname")
+    Set @JobTitle = Requestparameter("JobTitle")
+    Set @JobRole =  Requestparameter("JobRole")
+    Set @Company = Requestparameter("Company")
+    Set @Industry = Requestparameter("Industry")
+ Set @FirstName1 = lookup('SMMTobject__c_Salesforce','FirstName__c','Email_Address__c',@Email)
+ Set @LastName1 = lookup('SMMTobject__c_Salesforce','LastName__c','Email_Address__c',@Email)
+ Set @JobTitle1 = lookup('SMMTobject__c_Salesforce','JobTitle__c','Email_Address__c',@Email)
+ Set @Company1 = lookup('SMMTobject__c_Salesforce','Company__c','Email_Address__c',@Email)
+ 
+ Set @Email1 = lookup('SMMTobject__c_Salesforce','Email_Address__c','Email_Address__c',@Email)
+ 
+ 
+    Set @SMMTobjectName = lookup('SMMTobject__c_Salesforce','Id','Email_Address__c',@Email)
+ 
+    If requestparameter("hdsubmit")=="issubmit" then
+ 
+    upsertdata("Test_Subscription_final",1, "Email", @Email, "FirstName", @FirstName,"LastName" ,@LastName ,"JobTitle" ,@JobTitle, "JobRole", @JobRole, "Company", @Company, "Industry", @Industry, "status", @Status)
+ 
+ if NOT EMPTY (@SMMTobjectName) then
+ 
+ UpdateSingleSalesforceObject('SMMTobject__c', @SMMTobjectName, 'FirstName__c', @FirstName, 'LastName__c', @LastName, 'Email_Address__c', @Email, 'Company__c', @Company, 'JobRole__c', @JobRole, 'JobTitle__c', @JobTitle, 'Industry_Sector__c', @Industry , 'SubscriberKey__c' , @SubscriberKey)
+ 
+ Else
+ 
+ CreateSalesforceObject('SMMTobject__c', 8, 'FirstName__c', @FirstName, 'LastName__c', @LastName, 'Email_Address__c', @Email, 'Company__c', @Company, 'JobRole__c', @JobRole, 'JobTitle__c', @JobTitle, 'Industry_Sector__c', @Industry , 'SubscriberKey__c' , @SubscriberKey)
+ 
+ ENDIF
+ %%=Redirect('http://cloud.email.industryforum.co.uk/Thankyou')=%%
+ ENDIF
+ 
+]%%
+      <meta charset="utf-8">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <form id="myForm" method="post" action="%%= RequestParameter('PAGEURL')=%%">
+      <b>
+      </b> <h3><br>
+        <div style="overflow-y:hidden;">
+          <p class="para"><strong>My Professional Information</strong></p></div>
+           <span class="notice">Add or edit your personal information here. Once you have made changes to your information click the submit button</span>
+     </h3>
+     <div class="formWrapper">
+      <div class="formElement">
+         <div class="form-element">
+          <label class="form-element__label">First Name*</label>
+          <div class="form-element__control">
+            <input type="text" id="FirstName" name="FirstName" value="%%=v(@FirstName1)=%%" required="required" data-validation-message="Please fill out this field." class="input=True">
+          </div>
+       </div>
+       <div class="form-element">
+          <label class="form-element__label">Last Name*</label>
+          <div class="form-element__control">
+            <input type="text" id="Surname" name="Surname" value="%%=v(@LastName1)=%%" required="required" data-validation-message="Please fill out this field." class="input=True">
+          </div>
+       </div>
+       <div class="form-element">
+          <label class="form-element__label">Job Title*</label>
+          <div class="form-element__control">
+            <input type="text" id="JobTitle" name="JobTitle" value="%%=v(@JobTitle1)=%%" required="required" data-validation-message="Please fill out this field." class="input=True">
+           </div>
+       </div>
+        
+        <div class="form-element">
+          <label class="form-element__label">Job Role*</label>
+          <div class="form-element__control">
+              
+<select id="JobRole" name="JobRole" style="background-color:#FFFFFF" required="required" data-validation-message="Please fill out this field." class="input=True">
+  <option value="Manufacturing Engineering">Manufacturing Engineering</option>
+  <option value="Production/Operations">Production/Operations</option>
+  <option value="Supply Chain Professional">Supply Chain Professional</option>
+  <option value="Purchasing">Purchasing</option>
+  <option value="Quality">Quality</option>
+  <option value="Engineering">Engineering</option>
+  <option value="Product Manager">Product Manager</option>
+  <option value="General Management">General Management</option>
+  <option value="Supplier Development">Supplier Development</option>
+  <option value="Training">Training</option>
+  <option value="HR">HR</option>
+  <option value="Finance">FINANCE</option>
+  <option value="Other">Other</option>
+</select>
+</div>
+           </div>
+        
+        <div class="form-element">
+          <label class="form-element__label">Company*</label>
+          <div class="form-element__control">
+            <input type="text" id="Company" name="Company" value="%%=v(@Company1)=%%" required="required" data-validation-message="Please fill out this field." class="input=True">
+           </div>
+       </div>
+        
+        <div class="form-element">
+          <label class="form-element__label">Email Address*</label>
+          <div class="form-element__control">
+            <input type="text" id="EmailAddress" name="EmailAddress" value="%%=v(@Email1)=%%" required="required" data-validation-message="Please fill out this field." class="input=True">
+      </div>
+     </div>
+        
+        <div class="form-element">
+          <label class="form-element__label ">Industry/Sector*</label>
+          <div class="form-element__control">
+              
+<select id="Industry" style="background-color:#FFFFFF" name="Industry" required="required" data-validation-message="Please fill out this field." class="input=True">
+  <option value="Automotive">Automotive</option>
+  <option value="Aerospace &amp; Defence">Aerospace & Defence</option>
+  <option value="Food and Drink">Food and Drink</option>
+  <option value="Manufacturing - Other">Manufacturing - Other</option>
+  <option value="Pharmaceutical &amp; Health">Pharmaceutical & Health</option>
+  <option value="Industrial Products">Industrial Products</option>
+  <option value="Consumer Goods">Consumer Goods</option>
+  <option value="Industrial Equipment">Industrial Equipment</option>
+  <option value="Chemical and Process">Chemical and Process</option>
+  <option value="Power and Civil Nuclear">Power and Civil Nuclear</option>
+  <option value="Construction">Construction</option>
+  <option value="Rail">Rail</option>
+  <option value="Other">Other</option>
+</select>
+</div>
+           </div>
+
+       </div>
+        
+     <div class="Col">
+        <div style="overflow-y:hidden;">
+          <p class="para"><strong>My Preferences</strong></p></div>
+      <span class="notice">Indicate your Email preferences here. Once you have made change to your infomation, Click the update button</span>
+     </div>
+     <div class="checkBox">
+      <div class="form-element">
+          <div class="form-element__control">
+              <div class="checkbox">
+                  <input type="checkbox" name="options" id="checkbox-1" value="checkbox-1" checked="">
+                  <label class="checkbox__label" for="checkbox-1"><strong>HTML Emails</strong>
+                  </label>
+              </div>
+          </div>
+      </div>
+      
+      <br>
+      <span class="notice">When possible, send e-mail newsletters as HTML instead of Plain text</span>
+      <span class="notice">NOTE:Users of AOl 6.0 and earlier may experience issues with viewing HTML e-mail messages.</span>
+    <br><br><br>
+    <div>
+      <input type="submit" class="updateBtn">
+       <input type="hidden" id="hdsubmit" name="hdsubmit" value="issubmit"></div> </div> 
+        <div class="Footer">
+            <div class="container">
+                <div class="ColHalf">
+  
+             
+                   <div style="display:inline-block">
+               
+             <a href=""><img src="https://image.s7.sfmc-content.com/lib/fe9813727c64057975/m/1/55693131-544f-4d2e-a0c8-d94b5df0e8d3.png" width="30px" height="22px"><span>&nbsp;+44 (0) 121 717 6600</span></a>&nbsp;&nbsp;
+              <br>
+              <br>
+              <a href=""><img src="https://image.s7.sfmc-content.com/lib/fe9813727c64057975/m/1/aef0643d-5a39-4a7f-a3d3-6d1ae6f3f32c.png" width="27px" height="18px"><span>   &nbsp; enquiries@industryforum.co.uk</span></a>
+                     
+           </div>
+                  
+              
+                </div>
+                
+               <div class="ColHalf2"> 
+              <a href="https://www.youtube.com/channel/UCj8Q0uGuy4eQeQm9CGaDLOQ"><img src="https://image.s7.sfmc-content.com/lib/fe9813727c64057975/m/1/cd585db6-2898-44c5-8e45-05a5aafabdc7.png" width="40px" height="40px" style="margin:0px 5px"></a>
+              
+               <a href="https://www.linkedin.com/company/industry-forum"><img src="https://image.s7.sfmc-content.com/lib/fe9813727c64057975/m/1/0c17af4f-017e-4232-a0a0-6b08f4a9618f.png" width="40px" height="40px" style="margin:0px 5px"></a>
+              
+              <a href="https://twitter.com/smmtif"><img src="https://image.s7.sfmc-content.com/lib/fe9813727c64057975/m/1/118f71df-b400-42e1-90e8-a2abf70a0129.png" width="40px" height="40px" style="margin:0px 5px"></a>
+                </div>    
+
+            </div>
+        </div>
+       
+        
+ 
+ <script>
+     // $(function(){
+     //  $('body').on('click', '.tabs a', function(e){
+     //   var dataTarget = $(this).data("target");
+     //   $(this).addClass('active');
+     //   $(this).siblings().removeClass('active');
+     //   $('.commenTab').siblings().removeClass('showSecActive');
+     //      $('#'+dataTarget).addClass('showSecActive');
+     //  })
+     // })
+    </script>   
+        </div></form></section></section></div></div></div></div>
+
